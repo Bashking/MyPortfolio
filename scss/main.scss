@@ -1,6 +1,53 @@
-$primary-color:#444;
+$primary-color: #f22613;
+$secondary-color: #444;
+$tertiary-color: #fff;
+
+*{
+    box-sizing:border-box;
+}
 
 body{
     background: $primary-color;
-    color: #fff;
+    color: $tertiary-color;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23f97f51' stroke-width='54.5' stroke-opacity='0.33' %3E%3Ccircle fill='%23f22613' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23f32e16' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f43518' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23f53d1b' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23f6451e' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23f64c20' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23f75423' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23f85b26' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23f96229' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23fa692c' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23fa702e' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23fb7731' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23fc7e34' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23fd8537' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23fd8c3a' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23fe923d' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23fe9940' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23ff9f43' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E") !important;
+	background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+//Headings
+.headig{
+    padding:30px;
+}
+.heading img {
+    float: left;
+    position:relative;
+    bottom: 20px;
+     left:60px;
+  }
+.heading h1 {
+    position: relative;
+    top:20px;
+    bottom:20px;
+    padding: 1rem;
+  }
+
+h1,
+h2,
+h3{
+    margin: 0;
+    font-weight: 400;
+    &.lg-heading{
+        font-size: 6rem;
+       // font-family: 'Pacifico', cursive;
+       font-family: 'Lobster', cursive;
+    }
+    &.sm-heading{
+        font-family: 'Lobster', cursive;
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+    }
 }
