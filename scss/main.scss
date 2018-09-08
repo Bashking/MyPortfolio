@@ -1,9 +1,7 @@
-$primary-color: #f22613;
-$secondary-color: #444;
-$tertiary-color: #fff;
+@import 'config';
 
 *{
-    box-sizing:border-box;
+ box-sizing:border-box;
 }
 
 body{
@@ -19,20 +17,22 @@ body{
 }
 
 //Headings
-.headig{
-    padding:30px;
+.heading{
+    padding-top:4rem;
 }
 .heading img {
-    float: left;
+    float:left;
     position:relative;
     bottom: 20px;
-     left:60px;
+    left: 20px;
+    
   }
 .heading h1 {
     position: relative;
-    top:20px;
+    top:10px;
     bottom:20px;
-    padding: 1rem;
+    right:40px;
+    padding-top:1rem;
   }
 
 h1,
@@ -48,6 +48,44 @@ h3{
     &.sm-heading{
         font-family: 'Lobster', cursive;
         margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
+        padding: 0.5rem 0.7rem;
+        position: relative;
+        right: 20px;
     }
+}
+
+a{
+    text-decoration: none;
+    color:$tertiary-color;
+}
+
+header{
+    position:fixed;
+    z-index:2;
+    width: 100%;
+}
+
+.text-secondary{
+   color:$secondary-color; 
+}
+
+
+main{
+    padding:4rem 2rem; 
+    height: 100%;
+
+    .icons{
+        margin-top: 1rem;
+        position:relative;
+        right: 20px;
+    }
+
+    a{
+        padding:0.4rem;
+
+        &:hover{
+            color: $secondary-color;
+            @include easeOut();
+        }
+    } 
 }

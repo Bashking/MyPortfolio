@@ -1,0 +1,9 @@
+
+$primary-color: #f22613;
+$secondary-color: #444;
+$tertiary-color: #fff;
+$logo-color:#FF6600;
+
+@mixin easeOut{
+    transition: color 1.5s ease-out;
+}
