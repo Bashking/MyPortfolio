@@ -29,7 +29,7 @@
       @include easeOut;
     /*  -webkit-transition-delay: 0.6s;
       -o-transition-delay: 0.6s;*/
-      transition-delay: 0.6s;
+      transition-delay: 0.4s;
     /*  -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);*/
@@ -44,7 +44,7 @@
         &:nth-child(3) {
         /*  -webkit-transition-delay: 0.3s;
           -o-transition-delay: 0.3s;*/
-          transition-delay: 0.3s;
+          transition-delay: 0.2s;
         }
 
         &:nth-child(1) {
@@ -93,7 +93,7 @@
       padding: 0;
       background: darken($primary-color, 5);
       list-style: none;
-      transform: translate3d(0, -100%, 0);
+      transform: translate3d(100%, 0, 0);
       @include easeOut();
 
       &.show {
@@ -105,7 +105,7 @@
     //Branding Slide
     &-branding {
       background: #FF6600;
-      transform: translate3d(0, 100%, 0);
+      transform: translate3d(-100%, 0, 0);
       @include easeOut();
 
       &.show {
@@ -120,12 +120,11 @@
         justify-content: center;
         border-radius: 50%;
         border: solid 3px $tertiary-color;
-        
       }
     }
 
     .nav-item {
-      transform: translate3d(600px, 0, 0);
+      transform: translate3d(0,-600px, 0);
       @include easeOut();
 
       &.show {
@@ -134,11 +133,8 @@
       }
 
       &.current > a {
-
         color:#FF7F2A;
-
       }
-
     }
     .nav-link{
       display: inline-block;
@@ -158,9 +154,15 @@
     }
   }
   //Delay Each Nav item slide by 0.1s
-  @for $x from 1 through 4 {
+
+  $delay:0.6s;
+
+  @for $x from 1 through 4   {
 
     .nav-item:nth-child(#{$x}) {
-      transition-delay: $x * 0.1s;
+      transition-delay: $delay - ($x * 0.09s);
     }
   }
+ 
+
+  
