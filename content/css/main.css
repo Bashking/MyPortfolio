@@ -117,6 +117,175 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.24s; }
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    overflow: hidden;
+    padding-top: 1rem;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    bottom: 8rem; }
+  .heading {
+    display: block; }
+  .heading img {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin-left: 9rem;
+    padding: 2rem;
+    top: 3rem; }
+  h1,
+  h2,
+  h3 {
+    margin: 0; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 6rem !important;
+      font-family: 'Lobster', cursive;
+      position: relative;
+      padding-left: 1rem; }
+    h1.sm-heading,
+    h2.sm-heading,
+    h3.sm-heading {
+      font-family: 'Lobster', cursive;
+      margin-bottom: 2rem;
+      padding: 0.5rem 0.7rem;
+      position: relative;
+      margin-left: 1rem;
+      right: 20px; } }
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  main {
+    overflow: hidden;
+    padding-top: 1rem;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    bottom: 5rem; }
+  .heading {
+    padding: 10px;
+    align-items: center;
+    text-align: center; }
+  .heading img {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-left: 3.5rem;
+    top: 30px; }
+  h1,
+  h2,
+  h3 {
+    margin: 0; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 1rem;
+      font-family: 'Lobster', cursive;
+      position: relative;
+      margin-left: 3rem; }
+    h1.sm-heading,
+    h2.sm-heading,
+    h3.sm-heading {
+      font-family: 'Lobster', cursive;
+      margin-bottom: 2rem;
+      padding: 0.5rem 0.7rem;
+      position: relative;
+      margin-left: 1rem;
+      right: 20px; }
+  ul.menu-nav,
+  div.mneu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.mneu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    width: 100%;
+    height: 30vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .potrait {
+      background: url(../image/potrait2.jpg);
+      width: 150px;
+      height: 150px;
+      justify-content: center; } }
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  main {
+    padding-top: 0.5rem;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    bottom: 8rem;
+    overflow: hidden; }
+    main .icons {
+      font-size: 12px;
+      margin-top: 1rem;
+      position: relative;
+      right: 20px;
+      bottom: 1.5rem;
+      padding-left: 3rem; }
+    main a {
+      padding: 0.4rem; }
+  .heading {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative; }
+  .heading img {
+    width: 400px;
+    height: 220px;
+    position: relative;
+    top: 3rem;
+    padding-right: 8rem; }
+  h1,
+  h2,
+  h3 {
+    margin: 0; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 2.5rem !important;
+      font-family: 'Lobster', cursive;
+      padding-left: 5rem; }
+    h1.sm-heading,
+    h2.sm-heading,
+    h3.sm-heading {
+      font-size: 1.2rem !important;
+      font-family: 'Lobster', cursive;
+      margin-left: 3rem; }
+  ul.menu-nav,
+  div.mneu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.mneu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    width: 100%;
+    height: 30vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .potrait {
+      background: url(../image/potrait2.jpg);
+      width: 150px;
+      height: 150px;
+      justify-content: center; }
+  .menu .nav-link {
+    font-size: 20px !important; } }
+
 * {
   box-sizing: border-box; }
 
@@ -179,7 +348,7 @@ header {
    color:$secondary-color; 
 }*/
 main {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   height: 100%; }
   main .icons {
     margin-top: 1rem;

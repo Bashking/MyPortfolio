@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 *{
  box-sizing:border-box;
@@ -72,7 +73,7 @@ header{
 
 
 main{
-    padding:4rem 2rem; 
+    padding:5rem 2rem; 
     height: 100%;
 
     .icons{

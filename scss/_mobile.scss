@@ -1,0 +1,233 @@
+    //Wide Screens
+
+    @include mediaXl{
+        
+    }
+
+    //Desktops & Laptops
+
+    @include mediaLg{
+        main{
+            overflow: hidden;
+            padding-top:1rem;
+            align-items: center;
+            line-height: 1.5;
+            text-align: center;
+            position: relative;
+            bottom:8rem;
+        
+        }
+        //Headings
+        .heading{
+            display: block;
+        }
+    
+            .heading img {
+                width: 600px;
+                height: 400px;
+                position: relative;
+                margin-left: 9rem; 
+                padding:2rem;
+                top:3rem;
+            }
+    
+            h1,
+            h2,
+            h3{
+            margin: 0;
+            &.lg-heading{
+                font-size: 6rem !important;
+            // font-family: 'Pacifico', cursive;
+            font-family: 'Lobster', cursive;
+            position: relative;
+            padding-left:1rem;
+            }
+            &.sm-heading{
+                font-family: 'Lobster', cursive;
+                margin-bottom: 2rem;
+                padding: 0.5rem 0.7rem;
+                position: relative;
+                margin-left: 1rem;
+                right: 20px;
+            }
+        }
+    
+        
+    }
+
+    //Tablets
+
+    @include mediaMd{
+        
+    main{
+        overflow: hidden;
+        padding-top:1rem;
+        align-items: center;
+        line-height: 1.5;
+        text-align: center;
+        position: relative;
+        bottom: 5rem;
+    
+    }
+    //Headings
+    .heading{
+        padding:10px;
+        align-items: center;
+        text-align: center;
+    }
+
+        .heading img {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            margin-left: 3.5rem; 
+            top:30px;
+        }
+
+        h1,
+        h2,
+        h3{
+        margin: 0;
+        &.lg-heading{
+            font-size: 1rem;
+        // font-family: 'Pacifico', cursive;
+        font-family: 'Lobster', cursive;
+        position: relative;
+        margin-left: 3rem;
+        }
+        &.sm-heading{
+            font-family: 'Lobster', cursive;
+            margin-bottom: 2rem;
+            padding: 0.5rem 0.7rem;
+            position: relative;
+            margin-left: 1rem;
+            right: 20px;
+        }
+    }
+
+    ul.menu-nav,
+    div.mneu-branding{
+        float:none;
+        width:100%;
+        min-height:0;
+
+        &.show{
+            transform:translate3d(0,0,0);
+        }
+    }
+    .menu-nav{
+        height:70vh;
+        transform: translate3d(-100%,0,0);
+        font-size:24px;
+    }
+
+    .menu-branding
+    {
+       width:100%;
+       height:30vh;
+       transform: translate3d(100%, 0 ,0);
+
+       .potrait{
+            background: url(../image/potrait2.jpg);
+            width:150px;
+            height:150px;
+           justify-content: center;
+       }
+    }
+
+    }
+
+    //Smart phones
+
+    @include mediaSm{
+
+        main{
+            padding-top:0.5rem;
+            align-items: center;
+            line-height: 1.5;
+            text-align: center;
+            position: relative;
+            bottom:8rem;
+            overflow:hidden;
+            .icons{
+                font-size:12px;
+                margin-top: 1rem;
+                position:relative;
+                right: 20px;
+                bottom: 1.5rem;
+                padding-left:3rem;
+            }
+        
+            a{
+                padding:0.4rem;
+            } 
+        }
+        //Headings
+        .heading{
+            padding:10px;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+            .heading img {
+                width: 400px;
+                height: 220px;
+                position: relative; 
+                top:3rem;
+                padding-right: 8rem;
+            }
+
+            h1,
+            h2,
+            h3{
+            margin: 0;
+            &.lg-heading{
+                font-size: 2.5rem !important;
+            // font-family: 'Pacifico', cursive;
+            font-family: 'Lobster', cursive;
+            padding-left:5rem;
+            }
+            &.sm-heading{
+                font-size: 1.2rem !important;
+                font-family: 'Lobster', cursive;
+                margin-left:3rem;
+                
+            }
+        }
+
+        ul.menu-nav,
+        div.mneu-branding{
+            float:none;
+            width:100%;
+            min-height:0;
+    
+            &.show{
+                transform:translate3d(0,0,0);
+            }
+        }
+        .menu-nav{
+            height:70vh;
+            transform: translate3d(-100%,0,0);
+            font-size:24px;
+        }
+    
+        .menu-branding
+        {
+           width:100%;
+           height:30vh;
+           transform: translate3d(100%, 0 ,0);
+    
+           .potrait{
+               background: url(../image/potrait2.jpg);
+               width:150px;
+               height:150px;
+               justify-content: center;
+           }
+        }
+        .menu{
+        .nav-link{
+            font-size:20px !important;
+            }
+        }
+    }
