@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+@import 'cardflip';
 
 *{
  box-sizing:border-box;
@@ -35,6 +35,10 @@ body{
     bottom:20px;
     right:40px;
     padding-top:1rem;
+  }
+
+  .text-secondary{
+      font-weight:700;
   }
 
 h1,
@@ -74,7 +78,6 @@ header{
 
 main{
     padding:5rem 2rem; 
-    height: 100%;
 
     .icons{
         margin-top: 1rem;
@@ -91,3 +94,71 @@ main{
         }
     } 
 }
+
+    .about{
+        height:50vh;
+    }
+
+
+.about-info{
+    display:grid;
+   //grid-gap:20px;
+    padding-top: 2rem;
+    padding-bottom:1rem;
+    grid-template-areas:
+    'bioimage bio bio';
+     grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image{
+    grid-area: bioimage;
+    margin:auto;
+    width:250px;
+    height:250px;
+    z-index: 1;
+    border-radius:50%;
+    border:$tertiary-color 2px solid;
+}
+
+.bio{
+    grid-area: bio;
+    z-index: 0;
+    font-size: 1.5rem;
+    background: rgba(223, 30, 12, 0.4);
+    padding-left:1rem;
+    line-height:1.4;
+    border-bottom: $tertiary-color 4px solid;
+}
+
+
+h1,
+h2{
+    margin: 0;
+    font-weight: 400;
+    &.lg-heading-about{
+        font-size:4rem;
+       // font-family: 'Pacifico', cursive;
+       font-family: 'Lobster', cursive;
+       position:relative;
+       padding:0.5rem;
+       margin-left: 6rem;
+    }
+    &.sm-heading-about{
+        font-size:30px;
+        font-family: 'Lobster', cursive;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        position: relative;
+        margin-left:6rem;
+    }
+}
+
+
+//cardflip
+
+
+
+
+//import Responsiveness
+
+@import 'mobile';
